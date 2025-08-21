@@ -1,111 +1,52 @@
-<!-- markdownlint-disable-next-line -->
 # <img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OTel logo" width="45"> OpenTelemetry Demo
 
 [![Slack](https://img.shields.io/badge/slack-@cncf/otel/demo-brightgreen.svg?logo=slack)](https://cloud-native.slack.com/archives/C03B4CWV4DA)
 [![Version](https://img.shields.io/github/v/release/open-telemetry/opentelemetry-demo?color=blueviolet)](https://github.com/open-telemetry/opentelemetry-demo/releases)
-[![Commits](https://img.shields.io/github/commits-since/open-telemetry/opentelemetry-demo/latest?color=ff69b4&include_prereleases)](https://github.com/open-telemetry/opentelemetry-demo/graphs/commit-activity)
-[![Downloads](https://img.shields.io/docker/pulls/otel/demo)](https://hub.docker.com/r/otel/demo)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=red)](https://github.com/open-telemetry/opentelemetry-demo/blob/main/LICENSE)
 [![Integration Tests](https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml/badge.svg)](https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml)
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/opentelemetry-demo)](https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-demo)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9247/badge)](https://www.bestpractices.dev/en/projects/9247)
 
-## Welcome to the OpenTelemetry Astronomy Shop Demo
+> A microservice-based distributed system demonstrating OpenTelemetry instrumentation and observability in a realistic e-commerce environment.
 
-This repository contains the OpenTelemetry Astronomy Shop, a microservice-based
-distributed system intended to illustrate the implementation of OpenTelemetry in
-a near real-world environment.
+## 🎯 Purpose
 
-Our goals are threefold:
+- **Realistic Demo**: Production-like distributed system showcasing OpenTelemetry implementation
+- **Vendor Showcase**: Base platform for vendors and tooling authors to demonstrate integrations  
+- **Testing Ground**: Living example for OpenTelemetry contributors to test new features
 
-- Provide a realistic example of a distributed system that can be used to
-  demonstrate OpenTelemetry instrumentation and observability.
-- Build a base for vendors, tooling authors, and others to extend and
-  demonstrate their OpenTelemetry integrations.
-- Create a living example for OpenTelemetry contributors to use for testing new
-  versions of the API, SDK, and other components or enhancements.
+## 🚀 Quick Start
 
-We've already made [huge
-progress](https://github.com/open-telemetry/opentelemetry-demo/blob/main/CHANGELOG.md),
-and development is ongoing. We hope to represent the full feature set of
-OpenTelemetry across its languages in the future.
+Get the demo running in minutes:
 
-If you'd like to help (**which we would love**), check out our [contributing
-guidance](./CONTRIBUTING.md).
+- **[Docker Deployment](https://opentelemetry.io/docs/demo/docker_deployment/)** - Fastest setup
+- **[Kubernetes Deployment](https://opentelemetry.io/docs/demo/kubernetes_deployment/)** - Production-like environment
 
-If you'd like to extend this demo or maintain a fork of it, read our
-[fork guidance](https://opentelemetry.io/docs/demo/forking/).
+## 📚 Documentation
 
-## Quick start
+Complete documentation available at **[opentelemetry.io/docs/demo](https://opentelemetry.io/docs/demo/)**
 
-You can be up and running with the demo in a few minutes. Check out the docs for
-your preferred deployment method:
 
-- [Docker](https://opentelemetry.io/docs/demo/docker_deployment/)
-- [Kubernetes](https://opentelemetry.io/docs/demo/kubernetes_deployment/)
 
-## Documentation
+## 🏪 Vendor Integrations
 
-For detailed documentation, see [Demo Documentation][docs]. If you're curious
-about a specific feature, the [docs landing page][docs] can point you in the
-right direction.
+Vendor forks demonstrating their observability platforms:
 
-## Demos featuring the Astronomy Shop
+**Cloud Providers**: [Google Cloud] • [Azure Data Explorer] • [Oracle] • [AlibabaCloud LogService]
 
-We welcome any vendor to fork the project to demonstrate their services and
-adding a link below. The community is committed to maintaining the project and
-keeping it up to date for you.
+**APM & Observability**: [Datadog] • [Dynatrace] • [New Relic] • [AppDynamics] • [Instana] • [Splunk] • [Elastic]
 
-|                           |                |                                  |
-|---------------------------|----------------|----------------------------------|
-| [AlibabaCloud LogService] | [Dynatrace]    | [OpenSearch]                     |
-| [Apache Doris]            | [Elastic]      | [Oracle]                         |
-| [AppDynamics]             | [Google Cloud] | [Parseable]                      |
-| [Aspecto]                 | [Grafana Labs] | [Sentry]                         |
-| [Axiom]                   | [Guance]       | [ServiceNow Cloud Observability] |
-| [Axoflow]                 | [Honeycomb.io] | [SigNoz]                         |
-| [Azure Data Explorer]     | [Instana]      | [Splunk]                         |
-| [Causely]                 | [Kloudfuse]    | [Sumo Logic]                     |
-| [ClickStack]              | [Last9]        | [TelemetryHub]                   |
-| [Coralogix]               | [Liatrio]      | [Teletrace]                      |
-| [Dash0]                   | [Logz.io]      | [Tracetest]                      |
-| [Datadog]                 | [New Relic]    | [Uptrace]                        |
+**Open Source**: [Grafana Labs] • [SigNoz] • [Uptrace] • [Tracetest] • [OpenSearch] • [Apache Doris]
 
-## Contributing
+**Specialized**: [Honeycomb.io] • [Sentry] • [Axiom] • [Coralogix] • [Sumo Logic] • [Logz.io] • [Parseable]
 
-To get involved with the project see our [CONTRIBUTING](CONTRIBUTING.md)
-documentation. Our [SIG Calls](CONTRIBUTING.md#join-a-sig-call) are every other
-Wednesday at 8:30 AM PST and anyone is welcome.
+[View all integrations →](https://opentelemetry.io/docs/demo/)
 
-### Maintainers
+## 🤝 Contributing
 
-- [Juliano Costa](https://github.com/julianocosta89), Datadog
-- [Mikko Viitanen](https://github.com/mviitane), Dynatrace
-- [Pierre Tessier](https://github.com/puckpuck), Honeycomb
-- [Roger Coll](https://github.com/rogercoll), Elastic
+**Get Involved**: See [CONTRIBUTING.md](CONTRIBUTING.md) • Join [SIG Calls](CONTRIBUTING.md#join-a-sig-call) (bi-weekly Wednesdays 8:30 AM PST)
 
-For more information about the maintainer role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#maintainer).
+**Maintainers**: [Juliano Costa](https://github.com/julianocosta89) • [Mikko Viitanen](https://github.com/mviitane) • [Pierre Tessier](https://github.com/puckpuck) • [Roger Coll](https://github.com/rogercoll)
 
-### Approvers
-
-- [Cedric Ziel](https://github.com/cedricziel), Grafana Labs
-- [Shenoy Pratik](https://github.com/ps48), AWS OpenSearch
-
-For more information about the approver role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#approver).
-
-### Emeritus
-
-- [Austin Parker](https://github.com/austinlparker)
-- [Carter Socha](https://github.com/cartersocha)
-- [Michael Maxwell](https://github.com/mic-max)
-- [Morgan McLean](https://github.com/mtwo)
-- [Penghan Wang](https://github.com/wph95)
-- [Reiley Yang](https://github.com/reyang)
-- [Ziqi Zhao](https://github.com/fatsheep9146)
-
-For more information about the emeritus role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager).
-
-### Thanks to all the people who have contributed
+**Approvers**: [Cedric Ziel](https://github.com/cedricziel) • [Shenoy Pratik](https://github.com/ps48)
 
 [![contributors](https://contributors-img.web.app/image?repo=open-telemetry/opentelemetry-demo)](https://github.com/open-telemetry/opentelemetry-demo/graphs/contributors)
 
